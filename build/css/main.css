@@ -177,6 +177,55 @@ template{
   display:none;
 }
 
+@font-face{
+  font-family:'Freestyle Script';
+  src:url("../fonts/FreestyleScript-Regular.woff2") format("woff2"), url("../fonts/FreestyleScript-Regular.woff") format("woff");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap; }
+
+@font-face{
+  font-family:'Open Sans';
+  src:url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff");
+  font-weight:normal;
+  font-style:italic;
+  font-display:swap; }
+
+@font-face{
+  font-family:'Open Sans';
+  src:url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap; }
+
+@font-face{
+  font-family:'Open Sans';
+  src:url("../fonts/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight:600;
+  font-style:normal;
+  font-display:swap; }
+
+@font-face{
+  font-family:'Open Sans';
+  src:url("../fonts/OpenSans-Extrabold.woff2") format("woff2"), url("../fonts/OpenSans-Extrabold.woff") format("woff");
+  font-weight:800;
+  font-style:normal;
+  font-display:swap; }
+
+@font-face{
+  font-family:'Open Sans';
+  src:url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight:300;
+  font-style:normal;
+  font-display:swap; }
+
+@font-face{
+  font-family:'Open Sans';
+  src:url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight:bold;
+  font-style:normal;
+  font-display:swap; }
+
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
   margin:0;
   padding:0;
@@ -189,6 +238,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
   text-decoration:none;
   list-style:none;
   box-sizing:border-box; }
+
+body{
+  font-family:"Open Sans"; }
 
 a{
   text-decoration:none;
@@ -205,14 +257,17 @@ input{
   background-color:transparent;
   outline:none;
   -webkit-appearance:none;
-  color:#8a8987; }
+  -moz-appearance:none;
+  appearance:none; }
 
 textarea{
   resize:vertical;
   border:none;
   background-color:transparent;
   outline:none;
-  -webkit-appearance:none; }
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none; }
 
 button{
   cursor:pointer;
@@ -221,7 +276,9 @@ button{
   -webkit-transition:all 0.3s ease-in-out;
   transition:all 0.3s ease-in-out;
   outline:none;
-  -webkit-appearance:none; }
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none; }
 
 select{
   cursor:pointer;
@@ -230,7 +287,9 @@ select{
   -webkit-transition:all 0.3s ease-in-out;
   transition:all 0.3s ease-in-out;
   outline:none;
-  -webkit-appearance:none; }
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none; }
 
 .wrapper{
   width:100%;

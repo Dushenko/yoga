@@ -14,7 +14,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 }
 
 body {
-
+	font-family: $base-font;
 }
 
 a {
@@ -32,34 +32,14 @@ input {
 	border: none;
 	background-color: transparent;
 	outline: none;
-	-webkit-appearance: none;
-	color: #8a8987;
-	
-	&::placeholder {
-		
-	}
-	&:focus {
-		&::placeholder {
-			
-		}
-	}
+	appearance: none;
 }
 textarea {
 	resize: vertical;
 	border: none;
 	background-color: transparent;
 	outline: none;
-	-webkit-appearance: none;
-	
-	&::placeholder {
-
-	}
-	&:focus {
-		
-		&::placeholder {
-			
-		}
-	}
+	appearance: none;
 }
 
 button {
@@ -68,7 +48,7 @@ button {
 	background-color: transparent;
 	transition: all 0.3s ease-in-out;
 	outline: none;
-	-webkit-appearance: none;
+	appearance: none;
 }
 
 select {
@@ -77,7 +57,7 @@ select {
 	background-color: transparent;
 	transition: all 0.3s ease-in-out;
 	outline: none;
-	-webkit-appearance: none;
+	appearance: none;
 }
 
 .wrapper {
@@ -85,10 +65,10 @@ select {
 	position: relative;
 	overflow: hidden;
 	
-	@media screen and (max-width: 1024px) {
+	@media screen and (min-width: 1024px) {
 		
 	}
-	@media screen and (max-width: 1500px) {
+	@media screen and (min-width: 1500px) {
 
 	}
 }
