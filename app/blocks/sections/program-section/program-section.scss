@@ -1,0 +1,101 @@
+.program-section {
+	padding: 50px 0;
+
+	@media screen and (min-width: 768px) {
+		padding: 120px 0 50px;
+	}
+
+	.descr-title {
+		margin-bottom: 40px;
+
+		@media screen and (min-width: 768px) {
+			margin-bottom: 76px;
+		}
+	}
+
+	.program-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.program {
+			width: 100%;
+			margin-bottom: 25px;
+
+			@media screen and (min-width: 768px) {
+				width: calc(50% - 15px);
+			}
+		}
+	}
+}
+
+.program {
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		background-color: $white;
+		border-radius: $base-radius;
+		box-shadow: $secondary-shadow;
+
+		@media screen and (min-width: 1024px) {
+			flex-direction: row;
+		}
+	}
+
+	&__img {
+		margin-bottom: 10px;
+
+		@media screen and (min-width: 1024px) {
+			width: 220px;
+			flex: none;
+			margin-bottom: 0;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 270px;
+		}
+
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	&__info {
+		padding: 15px;
+		@media screen and (min-width: 768px) {
+			padding: 15px 20px 20px;
+		}
+		@media screen and (min-width: 1200px) {
+			padding: 50px 20px 40px 30px;
+		}
+	}
+
+	&__name {
+		color: $article-title;
+		font-size: 17px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+
+		@media screen and (min-width: 768px) {
+			margin-bottom: 36px;
+			font-size: 20px;
+		}
+	}
+
+	&__descr {
+		color: $base-text;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.4;
+		margin-bottom: 18px;
+	}
+
+	&__type {
+		color: $article-descr;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
