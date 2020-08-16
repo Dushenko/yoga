@@ -15,13 +15,17 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 
 body {
 	font-family: $base-font;
+
+	&.overflow {
+		overflow: hidden;
+	}
 }
 
 a {
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
-	transition: all .3s ease-in-out;
+	transition: $base-transition;
 }
 
 a:hover, a:active, a:focus {
@@ -46,7 +50,7 @@ button {
 	cursor: pointer;
 	border: none;
 	background-color: transparent;
-	transition: all 0.3s ease-in-out;
+	transition: $base-transition;
 	outline: none;
 	appearance: none;
 }
@@ -55,7 +59,7 @@ select {
 	cursor: pointer;
 	border: none;
 	background-color: transparent;
-	transition: all 0.3s ease-in-out;
+	transition: $base-transition;
 	outline: none;
 	appearance: none;
 }
@@ -64,6 +68,8 @@ select {
 	width: 100%;
 	position: relative;
 	overflow: hidden;
+	background-color: #ccc;
+	min-height: 100vh;
 	
 	@media screen and (min-width: 1024px) {
 		

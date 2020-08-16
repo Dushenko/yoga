@@ -242,12 +242,15 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, 
 body{
   font-family:"Open Sans"; }
 
+body.overflow{
+    overflow:hidden; }
+
 a{
   text-decoration:none;
   display:inline-block;
   cursor:pointer;
-  -webkit-transition:all .3s ease-in-out;
-  transition:all .3s ease-in-out; }
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease; }
 
 a:hover, a:active, a:focus{
   text-decoration:none; }
@@ -273,8 +276,8 @@ button{
   cursor:pointer;
   border:none;
   background-color:transparent;
-  -webkit-transition:all 0.3s ease-in-out;
-  transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
   outline:none;
   -webkit-appearance:none;
   -moz-appearance:none;
@@ -284,8 +287,8 @@ select{
   cursor:pointer;
   border:none;
   background-color:transparent;
-  -webkit-transition:all 0.3s ease-in-out;
-  transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
   outline:none;
   -webkit-appearance:none;
   -moz-appearance:none;
@@ -294,7 +297,9 @@ select{
 .wrapper{
   width:100%;
   position:relative;
-  overflow:hidden; }
+  overflow:hidden;
+  background-color:#ccc;
+  min-height:100vh; }
 
 .container{
   max-width:1200px;
@@ -309,3 +314,206 @@ select{
 .scroll-wrap::-webkit-scrollbar-thumb{
   background-color:rgba(0, 0, 0, 0.75);
   border-radius:2px; }
+
+.header{
+  padding:10px 0;
+  box-shadow:2px 2px 7px rgba(0, 0, 0, 0.15);
+  background-color:#FFFFFF;
+  position:relative;
+  z-index:1; }
+
+@media screen and (min-width: 768px){
+    .header{
+      padding:30px 0; } }
+
+@media screen and (min-width: 1024px){
+    .header{
+      padding:41px 0; } }
+
+.header .container{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-align:center;
+    align-items:center;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+    height:100%; }
+
+@media screen and (min-width: 768px){
+      .header .container{
+        -webkit-box-pack:center;
+        justify-content:center; } }
+
+.header .logo{
+    width:50px; }
+
+@media screen and (min-width: 768px){
+      .header .logo{
+        position:absolute;
+        top:50%;
+        left:50%;
+        -webkit-transform:translate(-50%, -50%);
+        -ms-transform:translate(-50%, -50%);
+        transform:translate(-50%, -50%); } }
+
+@media screen and (min-width: 1024px){
+      .header .logo{
+        width:67px; } }
+
+.header .logo img{
+      width:100%; }
+
+.nav{
+  position:fixed;
+  top:0;
+  z-index:5;
+  right:-100%;
+  width:255px;
+  height:100vh;
+  -webkit-transition:all 0.5s ease;
+  transition:all 0.5s ease;
+  background-color:#FFFFFF;
+  padding:25px 20px 20px 25px;
+  box-shadow:0px -7px 12px rgba(0, 0, 0, 0.25);
+  z-index:2; }
+
+@media screen and (min-width: 768px){
+    .nav{
+      width:auto;
+      position:relative;
+      top:auto;
+      right:auto;
+      height:auto;
+      background-color:transparent;
+      padding:0;
+      box-shadow:none;
+      display:-webkit-box;
+      display:flex;
+      -webkit-box-align:center;
+      align-items:center;
+      -webkit-box-ordinal-group:3;
+      order:2;
+      margin:0 65px 0 0; } }
+
+.nav.active{
+    right:0; }
+
+.nav__list{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    flex-direction:column; }
+
+@media screen and (min-width: 768px){
+      .nav__list{
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+        flex-direction:row;
+        -webkit-box-align:center;
+        align-items:center; } }
+
+.nav__item{
+    margin:0 0 25px; }
+
+@media screen and (min-width: 768px){
+      .nav__item{
+        margin:0 15px; } }
+
+@media screen and (min-width: 768px){
+      .nav__item:nth-child(3){
+        margin-right:80px; } }
+
+@media screen and (min-width: 1024px){
+      .nav__item:nth-child(3){
+        margin-right:184px; } }
+
+@media screen and (min-width: 768px){
+      .nav__item:nth-child(4){
+        margin-left:80px; } }
+
+@media screen and (min-width: 1024px){
+      .nav__item:nth-child(4){
+        margin-left:184px; } }
+
+.nav__link{
+    font-size:14px;
+    color:#555555;
+    font-weight:600; }
+
+@media screen and (min-width: 768px){
+      .nav__link{
+        position:relative; }
+        .nav__link:after{
+          content:'';
+          position:absolute;
+          bottom:-4px;
+          left:50%;
+          -webkit-transform:translateX(-50%);
+          -ms-transform:translateX(-50%);
+          transform:translateX(-50%);
+          width:30px;
+          height:1px;
+          background-color:#5363db;
+          opacity:0;
+          -webkit-transition:all 0.3s ease;
+          transition:all 0.3s ease; } }
+
+.nav__link:hover, .nav__link.active{
+      color:#5363db; }
+
+.nav__link:hover:after, .nav__link.active:after{
+        opacity:1; }
+
+.burger{
+  position:relative;
+  z-index:3;
+  width:30px;
+  cursor:pointer;
+  display:-webkit-box;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  flex-direction:column;
+  -webkit-box-align:center;
+  align-items:center; }
+
+@media screen and (min-width: 768px){
+    .burger{
+      display:none; } }
+
+.burger span{
+    width:30px;
+    height:3px;
+    background:#5363db;
+    border-radius:20px;
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    position:relative; }
+
+.burger span:nth-child(1){
+      margin-bottom:5px; }
+
+.burger span:nth-child(3){
+      margin-top:5px; }
+
+.burger.active:after{
+    display:none; }
+
+.burger.active span:nth-child(1){
+    top:8px;
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg); }
+
+.burger.active span:nth-child(2){
+    -webkit-transform:translateX(100px);
+    -ms-transform:translateX(100px);
+    transform:translateX(100px);
+    opacity:0; }
+
+.burger.active span:nth-child(3){
+    bottom:8px;
+    -webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg); }
