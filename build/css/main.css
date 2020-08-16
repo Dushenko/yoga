@@ -517,3 +517,13 @@ select{
     -webkit-transform:rotate(-45deg);
     -ms-transform:rotate(-45deg);
     transform:rotate(-45deg); }
+
+.about-section{
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  padding:50px 0; }
+
+@media screen and (min-width: 768px){
+    .about-section{
+      padding:100px 0 110px; } }
