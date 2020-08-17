@@ -50,15 +50,16 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-  var swiperIntro = new Swiper(".js-about-slider", {
-    slidesPerView: 1,
-    spaceBetween: 40,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: ".js-about-next",
-      prevEl: ".js-about-prev"
-    }
+  $('.js-about-slider').slick({
+    slidesToShow: 1,
+    dots: false,
+    arrows: true,
+    infinite: true,
+    autoplay: true,
+    rows: 1,
+    swipeToSlide: true
   });
+});
+$(document).ready(function () {
+  $("select").niceSelect();
 });

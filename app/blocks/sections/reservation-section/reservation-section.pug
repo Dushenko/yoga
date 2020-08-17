@@ -1,2 +1,19 @@
 section.reservation-section#about(style="background-image: url('images/about-bg.png');")
 	.container
+		.order
+			h2.order-title Trial Class
+			form(action="#").main-form
+				.main-form__wrap
+					.main-form__field
+						input(type="text" placeholder="Enter your name").main-form__input
+					.main-form__field
+						input(type="number" placeholder="Enter your phone").main-form__input
+					select.main-form__select
+						option(value='', disabled='', selected='') Chose your class
+						option(value="#") Первый
+						option(value="#") Второй
+						option(value="#") Третий
+					button(type="submit").main-form__btn Try it
+		.title-wrap
+			h1.main-title Just Balance your Mind & Body
+			h2.main-subtitle Create the healthy living for yourself
