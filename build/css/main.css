@@ -1372,14 +1372,22 @@ body.compensate-for-scrollbar{
     transform:rotate(-45deg); }
 
 .about-section{
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:cover;
-  padding:50px 0; }
+  padding:0 0 50px 0; }
 
 @media screen and (min-width: 768px){
     .about-section{
-      padding:100px 0 110px; } }
+      padding:50px 0 125px; } }
+
+.about-section .section-title{
+    text-align:left; }
+
+.about-section .about-text{
+    color:#555555;
+    font-size:14px;
+    line-height:1.4; }
+
+.about-section .about-info{
+    margin-bottom:40px; }
 
 .element-section{
   background-repeat:no-repeat;
@@ -1615,6 +1623,16 @@ body.compensate-for-scrollbar{
   color:#999999;
   font-size:14px;
   font-weight:400; }
+
+.reservation-section{
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  padding:50px 0; }
+
+@media screen and (min-width: 768px){
+    .reservation-section{
+      padding:100px 0 110px; } }
 
 .shop-section{
   padding:50px 0 0; }
