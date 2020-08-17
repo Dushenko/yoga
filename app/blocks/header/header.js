@@ -23,16 +23,22 @@ $(document).ready(function () {
     }
   });
 
-  // function menuFixed() {
-  //   var headerHeight = $("header.header").height(),
-  //     windowScroll = $(window).scrollTop();
-  //   windowScroll >= headerHeight
-  //     ? $(".menu").addClass("fixed")
-  //     : $(".menu").removeClass("fixed");
-  // }
+  //scroll to section
+  $(".scroll-link").click(function () {
+    var scroll_el = $(this).attr("href");
 
-  // $(window).scroll(function () {
-  //   menuFixed();
-  // });
-  // menuFixed();
+    if ($(scroll_el).length != 0) {
+      $("html, body").animate(
+        {
+          scrollTop: $(scroll_el).offset().top,
+        },
+        1000
+      );
+      $(".js-burger").removeClass("active");
+      $(".js-nav").removeClass("active");
+      $("body").removeClass("overflow");
+    }
+
+    return false;
+  });
 });

@@ -32,16 +32,21 @@ $(document).ready(function () {
     } else {
       $(".header").removeClass("fixed");
     }
-  }); // function menuFixed() {
-  //   var headerHeight = $("header.header").height(),
-  //     windowScroll = $(window).scrollTop();
-  //   windowScroll >= headerHeight
-  //     ? $(".menu").addClass("fixed")
-  //     : $(".menu").removeClass("fixed");
-  // }
-  // $(window).scroll(function () {
-  //   menuFixed();
-  // });
-  // menuFixed();
+  }); //scroll to section
+
+  $(".scroll-link").click(function () {
+    var scroll_el = $(this).attr("href");
+
+    if ($(scroll_el).length != 0) {
+      $("html, body").animate({
+        scrollTop: $(scroll_el).offset().top
+      }, 1000);
+      $(".js-burger").removeClass("active");
+      $(".js-nav").removeClass("active");
+      $("body").removeClass("overflow");
+    }
+
+    return false;
+  });
 });
 $(document).ready(function () {});
