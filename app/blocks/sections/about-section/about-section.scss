@@ -5,6 +5,13 @@
 		padding: 50px 0 125px;
 	}
 
+	.container {
+		@media screen and (min-width: 1024px) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
 	.section-title {
 		text-align: left;
 	}
@@ -17,5 +24,11 @@
 
 	.about-info {
 		margin-bottom: 40px;
+
+		@media screen and (min-width: 1024px) {
+			width: 428px;
+			margin-bottom: 0;
+			padding-top: 25px;
+		}
 	}
 }
