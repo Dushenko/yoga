@@ -140,16 +140,18 @@ select {
 	padding: 0 15px;
 }
 
-.main-title {
-
-	@media screen and (min-width: 768px) {}
-
-	@media screen and (min-width: 1024px) {}
-}
-
-.section-title {
-
-	@media screen and (max-width: 768px) {}
+.mask-bg {
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $active-link;
+		opacity: 0.8;
+		z-index: 1;
+	}
 }
 
 //scroll
