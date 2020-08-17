@@ -1,4 +1,10 @@
 //=require ../blocks/**/*.js
 $(document).ready(function () {
-  $("select").niceSelect();
+  //nice select
+	$("select").niceSelect();
+	
+	
+	$(".price__btn").hover(function () {
+    $(this).parent().parent().find(".price__head").toggleClass("active");
+  });
 });

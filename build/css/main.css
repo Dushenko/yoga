@@ -1730,8 +1730,14 @@ body.compensate-for-scrollbar{
 .price__head{
     color:#FFFFFF; }
 
+.price__head.active{
+      background-color:#FFFFFF; }
+
 .price__btn{
     color:#FFFFFF; }
+
+.price__btn:hover{
+      background-color:#FFFFFF; }
 
 .about-section{
   padding:0 0 50px 0; }
@@ -2169,7 +2175,13 @@ body.compensate-for-scrollbar{
     background-color:#5b6ceb;
     padding:20px;
     font-weight:700;
-    line-height:1; }
+    line-height:1;
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease; }
+
+.price__head.active{
+      background-color:#ffffff;
+      color:#5b6ceb; }
 
 @media screen and (min-width: 768px){
       .price__head{
@@ -2264,6 +2276,11 @@ body.compensate-for-scrollbar{
     background-color:#5b6ceb;
     border-radius:20px;
     padding:15px 48px; }
+
+.price__btn:hover{
+      box-shadow:4px 4px 9px rgba(0, 0, 0, 0.1);
+      background-color:#ffffff;
+      color:#5b6ceb; }
 
 .slick-slide{
   float:left;

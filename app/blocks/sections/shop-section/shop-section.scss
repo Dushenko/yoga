@@ -43,6 +43,12 @@
 		padding: 20px;
 		font-weight: 700;
 		line-height: 1;
+		transition: $base-transition;
+
+		&.active {
+			background-color: $white;
+			color: $title-color;
+		}
 
 		@media screen and (min-width: 768px) {
 			padding: 30px 20px;
@@ -141,5 +147,11 @@
 		background-color: $title-color;
 		border-radius: $tertiary-radius;
 		padding: 15px 48px;
+
+		&:hover {
+			box-shadow: $arrow-shadow;
+			background-color: $white;
+			color: $title-color;
+		}
 	}
 }
