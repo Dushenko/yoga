@@ -1,21 +1,21 @@
 .about-section {
-    padding: 0 0 50px 0;
+	padding: 0 0 50px 0;
 
-    @media screen and (min-width: 768px) {
-        padding: 50px 0 125px;
-    }
+	@media screen and (min-width: 768px) {
+		padding: 50px 0 125px;
+	}
 
-    .section-title {
-        text-align: left;
-    }
+	.section-title {
+		text-align: left;
+	}
 
-    .about-text {
-        color: $base-text;
-        font-size: 14px;
-        line-height: 1.4;
-    }
+	.about-text {
+		color: $base-text;
+		font-size: 14px;
+		line-height: 1.4;
+	}
 
-    .about-info {
-        margin-bottom: 40px;
-    }
+	.about-info {
+		margin-bottom: 40px;
+	}
 }

@@ -1,0 +1,160 @@
+.footer {
+	.top-footer {
+		padding: 50px 0;
+		background-color: $title-color;
+
+		@media screen and (min-width: 768px) {
+			padding: 100px 0;
+		}
+	}
+
+	.container {
+		@media screen and (min-width: 768px) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.info-wrap {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+
+		@media screen and (min-width: 768px) {
+			margin-bottom: 0;
+			width: calc(50% - 20px);
+		}
+
+		@media screen and (min-width: 1024px) {}
+
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.info-title {
+		color: $white;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+
+		@media screen and (min-width: 768px) {
+			margin-bottom: 60px;
+		}
+	}
+
+	.info-text {
+		color: $white;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 150%;
+		margin-bottom: 30px;
+		max-width: 460px;
+		width: 100%;
+		margin-bottom: 30px;
+
+		@media screen and (min-width: 768px) {
+			margin-bottom: 70px;
+		}
+	}
+
+	.contact-wrap {
+		@media screen and (min-width: 1024px) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
+	.contact {
+		display: flex;
+		margin-bottom: 30px;
+
+		@media screen and (min-width: 1024px) {
+			width: 50%;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.contact-img {
+		margin-right: 15px;
+		max-width: 21px;
+		height: auto;
+
+		img {
+			width: auto;
+			height: auto;
+		}
+	}
+
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+
+		@media screen and (min-width: 1024px) {
+			max-width: 158px;
+		}
+
+		p,
+		a {
+			color: $white;
+			font-size: 14px;
+			font-weight: 400;
+			margin-bottom: 5px;
+			line-height: 150%;
+			border-bottom: 1px solid transparent;
+			transition: all 0.3s ease;
+			cursor: pointer;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:hover {
+				border-color: $white;
+			}
+		}
+	}
+
+	.bottom-footer {
+		background-color: $active-color;
+		padding: 20px 0;
+
+		@media screen and (min-width: 768px) {
+			padding: 40px 0;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	.copyright {
+		color: $copyright-text;
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+.soc {
+	display: flex;
+
+	&__item {
+		margin: 0 20px 0 0;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		&:hover {
+			transform: rotate(360deg);
+		}
+	}
+}
