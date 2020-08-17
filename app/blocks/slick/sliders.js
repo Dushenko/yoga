@@ -14,7 +14,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: true,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     asNavFor: ".js-slider-nav",
   });
   $(".js-slider-nav").slick({

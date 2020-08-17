@@ -69,7 +69,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: true,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     asNavFor: ".js-slider-nav"
   });
   $(".js-slider-nav").slick({
@@ -82,7 +82,8 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   //nice select
-  $("select").niceSelect();
+  $("select").niceSelect(); //prise hover
+
   $(".price__btn").hover(function () {
     $(this).parent().parent().find(".price__head").toggleClass("active");
   });
