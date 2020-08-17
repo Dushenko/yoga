@@ -14,6 +14,12 @@ $(document).ready(function () {
     });
   }
 
+  //active link
+  $(".nav__link").click(function () {
+    $(".nav__link").removeClass("active");
+    $(this).addClass("active");
+  });
+
   // fixed header
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
@@ -30,7 +36,7 @@ $(document).ready(function () {
     if ($(scroll_el).length != 0) {
       $("html, body").animate(
         {
-          scrollTop: $(scroll_el).offset().top - 50 + 'px',
+          scrollTop: $(scroll_el).offset().top - 50 + "px",
         },
         1000
       );
