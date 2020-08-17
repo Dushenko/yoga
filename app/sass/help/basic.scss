@@ -1,4 +1,55 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -28,7 +79,9 @@ a {
 	transition: $base-transition;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
 	text-decoration: none;
 }
 
@@ -38,6 +91,7 @@ input {
 	outline: none;
 	appearance: none;
 }
+
 textarea {
 	resize: vertical;
 	border: none;
@@ -68,12 +122,14 @@ select {
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	
-	@media screen and (min-width: 1024px) {
-		
-	}
-	@media screen and (min-width: 1500px) {
+	padding-top: 68px;
 
+	@media screen and (min-width: 768px) {
+		padding-top: 78px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding-top: 100px;
 	}
 }
 
@@ -85,18 +141,15 @@ select {
 }
 
 .main-title {
-	
-	@media screen and (min-width: 768px) {
-	}
-	@media screen and (min-width: 1024px) {
-	}
+
+	@media screen and (min-width: 768px) {}
+
+	@media screen and (min-width: 1024px) {}
 }
 
 .section-title {
 
-	@media screen and (max-width: 768px) {
-		
-	}
+	@media screen and (max-width: 768px) {}
 }
 
 //scroll
@@ -104,7 +157,8 @@ select {
 	width: 3px;
 	background-color: #ccc;
 }
+
 .scroll-wrap::-webkit-scrollbar-thumb {
-	background-color: rgba(0,0,0,0.75);
+	background-color: rgba(0, 0, 0, 0.75);
 	border-radius: 2px;
 }

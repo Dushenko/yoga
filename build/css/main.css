@@ -226,7 +226,58 @@ template{
   font-style:normal;
   font-display:swap; }
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video{
   margin:0;
   padding:0;
   border:0;
@@ -252,7 +303,9 @@ a{
   -webkit-transition:all 0.3s ease;
   transition:all 0.3s ease; }
 
-a:hover, a:active, a:focus{
+a:hover,
+a:active,
+a:focus{
   text-decoration:none; }
 
 input{
@@ -297,7 +350,16 @@ select{
 .wrapper{
   width:100%;
   position:relative;
-  overflow:hidden; }
+  overflow:hidden;
+  padding-top:68px; }
+
+@media screen and (min-width: 768px){
+    .wrapper{
+      padding-top:78px; } }
+
+@media screen and (min-width: 1024px){
+    .wrapper{
+      padding-top:100px; } }
 
 .container{
   max-width:1200px;
@@ -1080,11 +1142,27 @@ body.compensate-for-scrollbar{
     max-width:calc(100% - 10px); } }
 
 .header{
-  padding:10px 0;
+  padding:8px 0 7px;
   box-shadow:2px 2px 7px rgba(0, 0, 0, 0.15);
   background-color:#FFFFFF;
-  position:relative;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
   z-index:1; }
+
+.header.fixed{
+    padding:6px 0 5px; }
+
+@media screen and (min-width: 768px){
+      .header.fixed{
+        padding:25px 0; } }
+
+@media screen and (min-width: 1024px){
+      .header.fixed{
+        padding:37px 0; } }
 
 @media screen and (min-width: 768px){
     .header{
@@ -1334,11 +1412,8 @@ body.compensate-for-scrollbar{
       content:'';
       position:absolute;
       z-index:2;
-      top:50%;
-      left:50%;
-      -webkit-transform:translate(-50%, -50%);
-      -ms-transform:translate(-50%, -50%);
-      transform:translate(-50%, -50%);
+      top:calc(50% - 28px);
+      left:calc(50% - 28px);
       width:57px;
       height:57px;
       border-radius:50%;
@@ -1348,7 +1423,7 @@ body.compensate-for-scrollbar{
       background-color:#FFFFFF;
       background-position:center;
       background-repeat:no-repeat;
-      background-size:31%;
+      background-size:24px;
       background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='136pt' version='1.1' viewBox='-1 0 136 136.21852' width='136pt'%3E%3Cg id='surface1'%3E%3Cpath d='M 93.148438 80.832031 C 109.5 57.742188 104.03125 25.769531 80.941406 9.421875 C 57.851562 -6.925781 25.878906 -1.460938 9.53125 21.632812 C -6.816406 44.722656 -1.351562 76.691406 21.742188 93.039062 C 38.222656 104.707031 60.011719 105.605469 77.394531 95.339844 L 115.164062 132.882812 C 119.242188 137.175781 126.027344 137.347656 130.320312 133.269531 C 134.613281 129.195312 134.785156 122.410156 130.710938 118.117188 C 130.582031 117.980469 130.457031 117.855469 130.320312 117.726562 Z M 51.308594 84.332031 C 33.0625 84.335938 18.269531 69.554688 18.257812 51.308594 C 18.253906 33.0625 33.035156 18.269531 51.285156 18.261719 C 69.507812 18.253906 84.292969 33.011719 84.328125 51.234375 C 84.359375 69.484375 69.585938 84.300781 51.332031 84.332031 C 51.324219 84.332031 51.320312 84.332031 51.308594 84.332031 Z M 51.308594 84.332031 ' style=' stroke:none;fill-rule:nonzero;fill:%235b6ceb;fill-opacity:1;' /%3E%3C/g%3E%3C/svg%3E"); }
 
 .gallery .gallery-img:hover:after{

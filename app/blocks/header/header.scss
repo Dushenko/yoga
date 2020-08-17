@@ -1,9 +1,25 @@
 .header {
-	padding: 10px 0;
+	padding: 8px 0 7px;
 	box-shadow: $header-shadow;
 	background-color: $white;
-	position: relative;
+	transition: $base-transition;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 1;
+
+	&.fixed {
+		padding: 6px 0 5px;
+
+		@media screen and (min-width: 768px) {
+			padding: 25px 0;
+		}
+
+		@media screen and (min-width: 1024px) {
+			padding: 37px 0;
+		}
+	}
 
 	@media screen and (min-width: 768px) {
 		padding: 30px 0;

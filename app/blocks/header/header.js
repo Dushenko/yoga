@@ -14,12 +14,25 @@ $(document).ready(function () {
     });
   }
 
-  //scroll to section
+  // fixed header
   $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
-      $(".header").addClass("active");
+      $(".header").addClass("fixed");
     } else {
-      $(".header").removeClass("active");
+      $(".header").removeClass("fixed");
     }
   });
+
+  // function menuFixed() {
+  //   var headerHeight = $("header.header").height(),
+  //     windowScroll = $(window).scrollTop();
+  //   windowScroll >= headerHeight
+  //     ? $(".menu").addClass("fixed")
+  //     : $(".menu").removeClass("fixed");
+  // }
+
+  // $(window).scroll(function () {
+  //   menuFixed();
+  // });
+  // menuFixed();
 });
