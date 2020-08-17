@@ -24,6 +24,96 @@
 	}
 }
 
+.reviews-slider {
+	position: relative;
+	margin: 0 -25px;
+
+	@media screen and (min-width: 1200px) {
+		margin: 0 -60px;
+	}
+
+	.slick-dots {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		justify-content: center;
+		width: 100%;
+
+
+		@media screen and (min-width: 768px) {
+			bottom: -50px;
+		}
+
+
+		@media screen and (min-width: 1300px) {
+			right: 0px;
+			bottom: auto;
+			top: 70px;
+			flex-direction: column;
+			width: 20px;
+		}
+
+		li {
+			font-size: 0;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			margin: 0 9px;
+			border: 2px solid $border-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@media screen and (min-width: 1300px) {
+				margin: 9px 0;
+			}
+
+			&:hover,
+			&.slick-active {
+				border: 2px solid $title-color;
+
+				button {
+					background-color: $title-color;
+				}
+			}
+		}
+
+		button {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: transparent;
+			display: block;
+			padding: 0;
+		}
+	}
+}
+
+.user-slider {
+	display: none;
+
+	@media screen and (min-width: 768px) {
+		display: block;
+		position: relative;
+		top: -90px;
+		left: 335px;
+		width: 270px;
+	}
+
+	.slick-arrow {
+		width: 29px;
+		height: 29px;
+	}
+
+	.slick-prev {
+		left: -46px;
+	}
+
+	.slick-next {
+		right: 40px;
+	}
+}
+
 .slick-arrow {
 	padding: 0;
 	width: 50px;
