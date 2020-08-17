@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     if ($(scroll_el).length != 0) {
       $("html, body").animate({
-        scrollTop: $(scroll_el).offset().top
+        scrollTop: $(scroll_el).offset().top - 50 + 'px'
       }, 1000);
       $(".js-burger").removeClass("active");
       $(".js-nav").removeClass("active");
