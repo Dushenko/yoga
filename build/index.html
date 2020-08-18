@@ -28,23 +28,25 @@
         </div>
       </header>
       <main class="main">
-        <section class="reservation-section" id="reservation" style="background-image: url('images/about-bg.png');">
+        <section class="reservation-section mask-bg" id="reservation" style="background-image: url('images/about-bg.png');">
           <div class="container">
             <div class="order">
               <h2 class="order-title">Trial Class</h2>
-              <form class="main-form" action="#">
+              <form class="main-form" action="#" method="post" name="formClass" id="formClass">
                 <div class="main-form__wrap">
                   <div class="main-form__field">
-                    <input class="main-form__input" type="text" placeholder="Enter your name">
+                    <input class="main-form__input" type="text" id="user_name" name="user_name" placeholder="Enter your name">
                   </div>
                   <div class="main-form__field">
-                    <input class="main-form__input" type="number" placeholder="Enter your phone">
+                    <input class="main-form__input" type="number" id="user_phone" name="user_phone" placeholder="Enter your phone">
                   </div>
-                  <select class="main-form__select">
-                    <option value="" disabled="" selected="">Chose your class</option>
-                    <option value="First">First</option>
-                    <option value="Second">Second</option>
-                  </select>
+                  <div class="main-form__field">
+                    <select class="main-form__select" id="select_class" name="select_class" required>
+                      <option value="" disabled="" selected="">Chose your class</option>
+                      <option value="First">First</option>
+                      <option value="Second">Second</option>
+                    </select>
+                  </div>
                   <button class="main-form__btn" type="submit">Try it</button>
                 </div>
               </form>
@@ -367,6 +369,7 @@
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
     <script src="js/libs/libs.min.js"></script>
     <script src="js/app.js"></script>
   </body>

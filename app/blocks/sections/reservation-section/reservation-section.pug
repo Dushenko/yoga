@@ -1,17 +1,18 @@
-section.reservation-section#reservation(style="background-image: url('images/about-bg.png');")
+section.reservation-section.mask-bg#reservation(style="background-image: url('images/about-bg.png');")
 	.container
 		.order
 			h2.order-title Trial Class
-			form(action="#").main-form
+			form(action="#" method="post" name="formClass" id="formClass").main-form
 				.main-form__wrap
 					.main-form__field
-						input(type="text" placeholder="Enter your name").main-form__input
+						input(type="text" id="user_name" name="user_name" placeholder="Enter your name").main-form__input
 					.main-form__field
-						input(type="number" placeholder="Enter your phone").main-form__input
-					select.main-form__select
-						option(value='', disabled='', selected='') Chose your class
-						option(value="First") First
-						option(value="Second") Second
+						input(type="number" id="user_phone" name="user_phone" placeholder="Enter your phone").main-form__input
+					.main-form__field
+						select(id="select_class" name="select_class" required).main-form__select
+							option(value='', disabled='', selected='') Chose your class
+							option(value="First") First
+							option(value="Second") Second
 					button(type="submit").main-form__btn Try it
 		.title-wrap
 			h1.main-title Just Balance your Mind & Body
