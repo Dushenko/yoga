@@ -342,10 +342,7 @@ select{
   background-color:transparent;
   -webkit-transition:all 0.3s ease;
   transition:all 0.3s ease;
-  outline:none;
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none; }
+  outline:none; }
 
 .wrapper{
   width:100%;
@@ -1998,13 +1995,14 @@ body.compensate-for-scrollbar{
     background-color:#ffffff;
     max-width:300px;
     width:100%;
-    padding:30px 35px;
+    padding:30px 20px;
     margin:0 auto;
     min-height:390px; }
 
 @media screen and (min-width: 768px){
       .reservation-section .order{
-        margin:0 90px 0 0; } }
+        margin:0 90px 0 0;
+        padding:30px 35px; } }
 
 @media screen and (min-width: 1360px){
       .reservation-section .order{
@@ -2092,7 +2090,7 @@ body.compensate-for-scrollbar{
   margin-bottom:13px;
   color:#888888;
   border-radius:8px;
-  padding:16px 9px;
+  padding:14px 9px 13px;
   border:1px solid #f2f2f2; }
 
 .main-form__select.error{
@@ -2111,11 +2109,14 @@ body.compensate-for-scrollbar{
   left:0; }
 
 .main-form input[type="number"]{
-  -moz-appearance:textfield; }
+  -moz-appearance:textfield;
+  -webkit-appearance:textfield;
+  appearance:textfield; }
 
 .main-form input::-webkit-outer-spin-button,
 .main-form input::-webkit-inner-spin-button{
-  -webkit-appearance:none; }
+  -webkit-appearance:none;
+  appearance:none; }
 
 .reviews-section{
   padding:0 0 50px;

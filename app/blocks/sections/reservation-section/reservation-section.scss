@@ -28,12 +28,13 @@
 		background-color: #ffffff;
 		max-width: 300px;
 		width: 100%;
-		padding: 30px 35px;
+		padding: 30px 20px;
 		margin: 0 auto;
 		min-height: 390px;
 
 		@media screen and (min-width: 768px) {
 			margin: 0 90px 0 0;
+			padding: 30px 35px;
 		}
 
 		@media screen and (min-width: 1360px) {
@@ -120,7 +121,7 @@
 		margin-bottom: 13px;
 		color: $placeholder-color;
 		border-radius: $base-radius;
-		padding: 16px 9px;
+		padding: 14px 9px 13px;
 		border: 1px solid $input-bg;
 
 		&.error {
@@ -133,7 +134,7 @@
 	}
 
 	label.error {
-		color: $valid
+		color: $valid;
 		font-style: italic;
 		font-size: 12px;
 		display: block;
@@ -144,10 +145,12 @@
 
 	input[type="number"] {
 		-moz-appearance: textfield;
+		appearance: textfield;
 	}
 
 	input::-webkit-outer-spin-button,
 	input::-webkit-inner-spin-button {
 		-webkit-appearance: none;
+		appearance: none;
 	}
 }
