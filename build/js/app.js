@@ -104,5 +104,7 @@ $(document).ready(function () {
       user_phone: "Please enter your phone number",
       select_class: "Please select a class"
     }
-  });
+  }); //animation
+
+  AOS.init();
 });
